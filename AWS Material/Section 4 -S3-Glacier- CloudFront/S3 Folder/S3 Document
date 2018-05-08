@@ -1,1 +1,45 @@
+Every kind of AWS certificationn need to work with S3.
+S3 - SImple Storage Service
+S3 provide developers to safe place your files. It is Object based storage
+The data is spread accross multiple location
+0Bytes to 5TB storage space
+S3 is Object Based
+Files are storaed in Buckets
+Bucket is a folder inside a cloud
+S3 is a universal namespace. Name must be unique.
+extension of the file link will be starting with S3 name.
+when you upload a file in the S3 then we will get HTTP 200 Success code
 
+Data Consistency Model for S3 :
+Read after write consistency for PUTS of the new objects
+Eventual consistency for overwrite PUTS and DELETES (Can take some time to propogate)
+
+S3Is A SImple Key -Value Store:
+ S2 is object based. Objects consis of the following: 
+ Key - Name of the object
+ Value - This is Simply the data and is made up of a sequence of bytes
+ Version ID - Important for versioning
+ Metadata - Data about data you are storing
+ Subresources:
+  Access Control Lists
+
+Amazon guarantee for 99.9% availability 
+Amazon guarantee for 99.9999999% durability for S3 information (11 * 9s)
+Tiered storage Available
+Lifecycle Management
+Versioning
+Encryption
+Secure your data using Access control lists and bucket policies
+
+S3 -Storage Tiers :
+  S3 Standard : 99.99% Availability, 99.9999999999% durability
+  S3 - IA (Infrequently Accessed) : For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are charged a retrival fee.
+  S3 One ZOne -IA: Want a lowe cost option for infrequently accessed data, but do not require the  multiple availability zone data resilience.
+  Glacier: Very cheap , but used for archival only. Expedidited, standard or bulk.
+  
+S3-Charges:
+  Storage
+  Requests
+  Storage Management Pricing (Based on departments u provide access)
+  Data tarnsfer pricing (Cross platofomr replication)
+  
