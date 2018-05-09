@@ -1,1 +1,14 @@
+S3 is the oldest service in AWS.
+it very important in all AWS examinations
 
+Buckets are a universal name space
+Upload an object to S3 receive a HTTP 200 Code
+S3,S3-IA, S3 Reduced Redundancy Storage
+Encryption
+  CLient Side Encryption
+  Server SIde Encryption
+    Server side encryption with Amazon S3 Managed Keys (SSE - S3)
+    Server SIde encryption with KMS (SSE-KMS)
+    Server Side encryption with Customer Provided Keys (SSe -C)
+Control access to buckets using either a bucket ACL or using Bucket Policies
+By Default buckets are private and all objects stored inside them are private.
