@@ -1,0 +1,28 @@
+Elasic block storage allows u to create storage volumes and attch them to Amazon EC2 instances. Once  attached, you can create a file system on top of these volumes, run a DB, or use them in any other way you would use a block device
+Amazon EBS volumes are places in a specific AZ where they are autommatically replicated to protect you from the failure of a single component.
+
+EBS Volumes:
+
+General Purpose SSD (GP2)
+  General Purpose, balances both price and performance
+  Ratio of 3 IOPS per GB with up to 10,000 IOPS and the ability to burst up to 3000 IOPS for extended periods of time for volumes at 3334GB and above
+
+Provisioned IOPS SSD (IO1)
+  Anaother SSD drive for hugh performace applications like related DB applications etc. More then 10,000 IOPS
+  you can provision more than 20000 IOPS
+
+Throughput Optimized HHD (ST1)
+  Big Data
+  warehouses
+  Log processing
+  Cannot be a boot volume
+
+Cold HDD (SC1)
+  Lowest cost storage for infrequently accessed workloads
+  File Server
+  Cannot be a  boot volume
+
+Magnetic (Standard)
+  Lowest cost per GB ofall EBS volume types what is bootable.
+  magnetic volumes are ideal for workloads.
+  
