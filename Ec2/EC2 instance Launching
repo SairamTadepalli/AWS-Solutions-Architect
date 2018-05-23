@@ -1,0 +1,9 @@
+Go to AWS console and click on EC2 service and before that check the location you are in for the services.
+
+click on the launch instance button -> Select the Amazon VM HVM with 64bit -> Select t2 micro instance type -> 
+
+
+
+
+
+one subnet is equal to one AZ
